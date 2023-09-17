@@ -5,7 +5,7 @@
   "author": "Majharul Islam",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon --watch 'src/**/*.ts' --ignore 'src/**/*.spec.ts' --exec ts-node -T ./src/server.ts",
+    "start": "ts-node-dev --respawn --transpile-only src/server.ts",
     "build": "tsc"
   },
   "dependencies": {
@@ -48,11 +48,10 @@
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
     "fs": "^0.0.1-security",
-    "nodemon": "^2.0.22",
     "path": "^0.12.7",
     "prettier": "^2.8.8",
     "rimraf": "^5.0.0",
-    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
     "typescript": "^5.0.4"
   }
 }
